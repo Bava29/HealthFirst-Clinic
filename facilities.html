@@ -33,323 +33,547 @@
 </head>
 
 <body>
-    <!-- Spinner Start -->
-    <div id="spinner"
-        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-        <div class="spinner-border position-relative text-primary" style="width: 6rem; height: 6rem;" role="status">
-        </div>
-        <img src="img/logo.png" class="spinner-logo position-absolute top-50 start-50 translate-middle"
-            alt="Clinic Logo">
-    </div>
-    <!-- Spinner End -->
-
-
-    <!-- Topbar Start -->
-    <div class="container-fluid bg-light px-0 wow fadeIn" data-wow-delay="0.1s">
-        <div class="row gx-0 align-items-center d-none d-lg-flex">
-            <div class="col-lg-6 px-5 text-start">
-                <ol class="breadcrumb mb-0">
-                    <li class="breadcrumb-item"><a class="small text-secondary" href="#home">Home</a></li>
-                    <li class="breadcrumb-item"><a class="small text-secondary" href="#services">Services</a></li>
-                    <li class="breadcrumb-item"><a class="small text-secondary" href="#team">Doctors</a></li>
-                    <li class="breadcrumb-item"><a class="small text-secondary" href="#contact">Contact</a></li>
-                </ol>
+    <div class="main-wrapper">
+        <!-- Spinner Start -->
+        <div id="spinner"
+            class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border position-relative text-primary" style="width: 6rem; height: 6rem;" role="status">
             </div>
-            <div class="col-lg-6 px-5 text-end">
-                <small>Open daily for appointments and walk-ins:</small>
-                <div class="h-100 d-inline-flex align-items-center">
-                    <span class="btn-square text-primary border-end rounded-0"><i class="far fa-clock"></i></span>
-                    <span class="small ps-3 text-secondary">8:00 AM - 8:00 PM</span>
+            <img src="img/logo.png" class="spinner-logo position-absolute top-50 start-50 translate-middle"
+                alt="Clinic Logo">
+        </div>
+        <!-- Spinner End -->
+
+
+        <!-- Topbar Start -->
+        <div class="container-fluid bg-light px-0 wow fadeIn" data-wow-delay="0.1s">
+            <div class="row gx-0 align-items-center d-none d-lg-flex">
+                <div class="col-lg-6 px-5 text-start">
+                    <ol class="breadcrumb mb-0">
+                        <li class="breadcrumb-item"><a class="small text-secondary" href="#home">Home</a></li>
+                        <li class="breadcrumb-item"><a class="small text-secondary" href="#services">Services</a></li>
+                        <li class="breadcrumb-item"><a class="small text-secondary" href="#team">Doctors</a></li>
+                        <li class="breadcrumb-item"><a class="small text-secondary" href="#contact">Contact</a></li>
+                    </ol>
+                </div>
+                <div class="col-lg-6 px-5 text-end">
+                    <small>Open daily for appointments and walk-ins:</small>
+                    <div class="h-100 d-inline-flex align-items-center">
+                        <span class="btn-square text-primary border-end rounded-0"><i class="far fa-clock"></i></span>
+                        <span class="small ps-3 text-secondary">8:00 AM - 8:00 PM</span>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Topbar End -->
+        <!-- Topbar End -->
 
 
-    <!-- Brand & Contact Start -->
-    <div class="container-fluid py-4 px-5 wow fadeIn" data-wow-delay="0.1s">
-        <div class="row align-items-center top-bar">
-            <div class="col-lg-4 col-md-12 text-center text-lg-start">
-                <a href="index.html" class="navbar-brand m-0 p-0">
-                    <h1 class="fw-bold m-0 d-flex align-items-center">
+        <!-- Brand & Contact Start -->
+        <div class="container-fluid py-4 px-5 wow fadeIn" data-wow-delay="0.1s">
+            <div class="row align-items-center top-bar">
+                <div class="col-lg-4 col-md-12 text-center text-lg-start">
+                    <a href="index.html" class="navbar-brand m-0 p-0">
+                        <h1 class="fw-bold m-0 d-flex align-items-center">
 
-                        <img src="img/logo.png" alt="Logo" class="logo-img">
+                            <img src="img/logo.png" alt="Logo" class="logo-img">
 
-                        <span class="logo-text">
-                            HealthFirst
-                            <small>Clinic</small>
-                        </span>
+                            <span class="logo-text">
+                                HealthFirst
+                                <small>Clinic</small>
+                            </span>
 
-                    </h1>
+                        </h1>
+                    </a>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="col-lg-8 d-none d-lg-block">
+                    <div class="row">
+
+                        <!-- Opening Hours -->
+                        <div class="col-lg-4 d-flex align-items-center ">
+                            <div class="d-flex align-items-center">
+                                <div class="flex-shrink-0 btn-lg-square border rounded-circle">
+                                    <i class="far fa-clock text-primary"></i>
+                                </div>
+                                <div class="ps-3">
+                                    <p class="mb-2">Opening Hours</p>
+                                    <h6 class="mb-0">8:00 AM - 8:00 PM</h6>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Call Us -->
+                        <div class="col-lg-4 d-flex align-items-center ">
+                            <div class="d-flex align-items-center">
+                                <div class="flex-shrink-0 btn-lg-square border rounded-circle">
+                                    <i class="fa fa-phone text-primary"></i>
+                                </div>
+                                <div class="ps-3">
+                                    <p class="mb-2">Call Us</p>
+                                    <h6 class="mb-0">+91 98765 43210</h6>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Email -->
+                        <div class="col-lg-4 d-flex align-items-center justify-content-end">
+                            <div class="d-flex align-items-center">
+                                <div class="flex-shrink-0 btn-lg-square border rounded-circle">
+                                    <i class="far fa-envelope text-primary"></i>
+                                </div>
+                                <div class="ps-3">
+                                    <p class="mb-2">Email Us</p>
+                                    <h6 class="mb-0">care@healthfirstclinic.com</h6>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- Brand & Contact End -->
+
+
+        <!-- Navbar Start -->
+        <nav class="navbar navbar-expand-lg bg-primary navbar-dark sticky-top py-lg-0 px-lg-5 wow fadeIn"
+            data-wow-delay="0.1s">
+            <a href="#" class="navbar-brand ms-3 d-lg-none">MENU</a>
+            <button type="button" class="navbar-toggler me-3" data-bs-toggle="collapse"
+                data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav me-auto p-3 p-lg-0">
+                    <a href="index.html" class="nav-item nav-link">Home</a>
+                    <a href="about.html" class="nav-item nav-link">About Us</a>
+                    <a href="services.html" class="nav-item nav-link">Services</a>
+                    <a href="facilities.html" class="nav-item nav-link active">Facilities</a>
+                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">More</a>
+
+                        <div class="dropdown-menu border-0 rounded-0 rounded-bottom m-0">
+                            <a href="appointment.html" class="dropdown-item">Book Appointment</a>
+                            <a href="testimonial.html" class="dropdown-item">Patient Reviews</a>
+                            <a href="faq.html" class="dropdown-item">FAQs</a>
+                            <a href="404.html" class="dropdown-item">404 Page</a>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="#contact" class="btn btn-sm btn-light rounded-pill py-2 px-4 d-none d-lg-block">Book
+                    Appointment</a>
+            </div>
+        </nav>
+        <!-- Navbar End -->
+
+
+        <!-- Page Header Start -->
+        <section class="about-hero wow fadeIn" data-wow-delay="0.1s">
+
+            <div class="about-hero-content text-center">
+
+                <h1 class="about-title">Facilities</h1>
+
+                <p class="about-subtitle">
+                    Equipped with modern infrastructure and advanced medical technology to ensure the highest standards
+                    of
+                    patient care.
+                </p>
+
+                </p>
+
+                <nav class="about-breadcrumb">
+                    <ol>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="facilities.html" class="active">Facilities</a></li>
+                    </ol>
+                </nav>
+
+            </div>
+
+        </section>
+        <!-- Page Header End -->
+
+        <div class="container-xxl py-5 mt-5">
+            <div class="container">
+
+                <div class="text-center mb-5">
+                    <span class="heading-line">Our Facilities</span>
+                    <h2 class="heading-main">Advanced Medical Infrastructure</h2>
+                </div>
+
+                <div class="row g-4">
+
+                    <!-- ICU -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="facility-card">
+                            <i class="fa fa-bed"></i>
+                            <h5>ICU & Critical Care</h5>
+                            <p>Fully equipped ICU with 24/7 monitoring and expert care.</p>
+                        </div>
+                    </div>
+
+                    <!-- Laboratory -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="facility-card">
+                            <i class="fa fa-flask"></i>
+                            <h5>Advanced Laboratory</h5>
+                            <p>Accurate diagnostics with modern testing equipment.</p>
+                        </div>
+                    </div>
+
+                    <!-- Pharmacy -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="facility-card">
+                            <i class="fa fa-pills"></i>
+                            <h5>24/7 Pharmacy</h5>
+                            <p>All essential medicines available round the clock.</p>
+                        </div>
+                    </div>
+
+                    <!-- Ambulance -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="facility-card">
+                            <i class="fa fa-ambulance"></i>
+                            <h5>Emergency Ambulance</h5>
+                            <p>Quick response ambulance services available anytime.</p>
+                        </div>
+                    </div>
+
+                    <!-- Operation Theatre -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="facility-card">
+                            <i class="fa fa-hospital"></i>
+                            <h5>Modern Operation Theatre</h5>
+                            <p>Advanced surgical equipment for safe procedures.</p>
+                        </div>
+                    </div>
+
+                    <!-- Radiology -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="facility-card">
+                            <i class="fa fa-x-ray"></i>
+                            <h5>Radiology & Scans</h5>
+                            <p>X-ray, CT scan, and imaging services with precision.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- Strength facilities -->
+        <div class="container-xxl py-5">
+            <div class="container text-center">
+
+                <div class="mb-5">
+                    <span class="heading-line">Our Strength</span>
+                    <h2 class="heading-main">Facility Advantages</h2>
+                </div>
+
+                <div class="floating-wrapper">
+
+                    <div class="floating-card">
+                        <i class="fa fa-heart"></i>
+                        <h5>Patient First</h5>
+                    </div>
+
+                    <div class="floating-card">
+                        <i class="fa fa-hospital"></i>
+                        <h5>Modern Setup</h5>
+                    </div>
+
+                    <div class="floating-card">
+                        <i class="fa fa-user-md"></i>
+                        <h5>Expert Team</h5>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- Facility gallery -->
+
+        <div class="container-xxl py-5 mt-5">
+            <div class="container">
+
+                <div class="text-center mb-5">
+                    <span class="heading-line">Gallery</span>
+                    <h2 class="heading-main">Explore Our Facilities</h2>
+                </div>
+
+                <div class="row g-4">
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="gallery-item">
+                            <img src="img/facility-1.jpg" alt="">
+                            <div class="gallery-caption">
+                                <span class="small-text">FACILITY</span>
+
+                                <h5>Reception & Waiting Area</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="gallery-item">
+                            <img src="img/facility-2.jpg" alt="">
+                            <div class="gallery-caption">
+                                <span class="small-text">FACILITY</span>
+
+                                <h5>Patient Care Room</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="gallery-item">
+                            <img src="img/facility-3.jpg" alt="">
+                            <div class="gallery-caption">
+                                <span class="small-text">FACILITY</span>
+
+                                <h5>Diagnostic Equipment Room</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="gallery-item">
+                            <img src="img/facility-4.jpg" alt="">
+                            <div class="gallery-caption">
+                                <span class="small-text">FACILITY</span>
+
+                                <h5>Operation Theatre</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="gallery-item">
+                            <img src="img/facility-5.jpg" alt="">
+                            <div class="gallery-caption">
+                                <span class="small-text">FACILITY</span>
+
+                                <h5>Radiology & Imaging</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="gallery-item">
+                            <img src="img/facility-6.jpg" alt="">
+                            <div class="gallery-caption">
+                                <span class="small-text">FACILITY</span>
+                                <h5>Inpatient Care Unit</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <!-- patient comfort facilities -->
+
+        <div class="container-xxl py-5 mt-5">
+            <div class="container text-center">
+
+                <div class="mb-5">
+                    <span class="heading-line">Patient Comfort</span>
+                    <h2 class="heading-main">Facilities Designed for Your Comfort</h2>
+                </div>
+
+                <div class="row g-4">
+
+                    <div class="col-md-3">
+                        <div class="amenity-card">
+                            <i class="fa fa-wifi"></i>
+                            <p>Free Wi-Fi</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="amenity-card">
+                            <i class="fa fa-chair"></i>
+                            <p>Comfort Waiting Area</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="amenity-card">
+                            <i class="fa fa-car"></i>
+                            <p>Parking Facility</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="amenity-card">
+                            <i class="fa fa-tv"></i>
+                            <p>Entertainment Area</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="split-section mt-5">
+
+            <div class="split-left">
+                <h2>World-Class Infrastructure</h2>
+                <p>Modern facilities with advanced medical support.</p>
+            </div>
+
+            <div class="split-right">
+                <img src="img/facility-2.jpg" alt="">
+            </div>
+
+        </div>
+
+        <div class="container-xxl py-5 mt-5">
+            <div class="container text-center">
+
+                <div class="mb-5">
+                    <span class="heading-line">Highlights</span>
+                    <h2 class="heading-main">Why Our Facilities Stand Out</h2>
+                </div>
+
+                <div class="row g-4">
+
+                    <!-- Item 1 -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="highlight-card">
+                            <i class="fa fa-clock"></i>
+                            <h5>24/7 Availability</h5>
+                            <p>Round-the-clock medical support for emergencies.</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="highlight-card">
+                            <i class="fa fa-microscope"></i>
+                            <h5>Modern Equipment</h5>
+                            <p>Advanced technology for accurate diagnosis.</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="highlight-card">
+                            <i class="fa fa-shield-alt"></i>
+                            <h5>Hygiene Standards</h5>
+                            <p>Strict cleanliness and safety protocols.</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 4 -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="highlight-card">
+                            <i class="fa fa-database"></i>
+                            <h5>Digital Records</h5>
+                            <p>Secure and easy access to patient data.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="video-section">
+
+            <div class="video-overlay text-center">
+                <h2>Take a Tour of Our Facilities</h2>
+
+
+                <a href="#" class="play-btn">
+                    <i class="fa fa-play"></i>
                 </a>
             </div>
 
-            <!-- Contact Info -->
-            <div class="col-lg-8 d-none d-lg-block">
-                <div class="row">
+        </div>
 
-                    <!-- Opening Hours -->
-                    <div class="col-lg-4 d-flex align-items-center ">
-                        <div class="d-flex align-items-center">
-                            <div class="flex-shrink-0 btn-lg-square border rounded-circle">
-                                <i class="far fa-clock text-primary"></i>
-                            </div>
-                            <div class="ps-3">
-                                <p class="mb-2">Opening Hours</p>
-                                <h6 class="mb-0">8:00 AM - 8:00 PM</h6>
-                            </div>
-                        </div>
+        <div class="process-section container-xxl mt-5 py-5">
+            <div class="process-container container text-center">
+
+                <div class="process-header mb-5">
+                    <span class="heading-line">Patient Journey</span>
+                    <h2 class="heading-main">How Our Facilities Support You</h2>
+                </div>
+
+                <div class="process-timeline">
+
+                    <div class="process-item">
+                        <span class="process-number">01</span>
+                        <h5>Registration</h5>
+                        <p>Quick and smooth check-in process.</p>
                     </div>
 
-                    <!-- Call Us -->
-                    <div class="col-lg-4 d-flex align-items-center ">
-                        <div class="d-flex align-items-center">
-                            <div class="flex-shrink-0 btn-lg-square border rounded-circle">
-                                <i class="fa fa-phone text-primary"></i>
-                            </div>
-                            <div class="ps-3">
-                                <p class="mb-2">Call Us</p>
-                                <h6 class="mb-0">+91 98765 43210</h6>
-                            </div>
-                        </div>
+                    <div class="process-item">
+                        <span class="process-number">02</span>
+                        <h5>Diagnosis</h5>
+                        <p>Advanced labs and imaging support.</p>
                     </div>
 
-                    <!-- Email -->
-                    <div class="col-lg-4 d-flex align-items-center justify-content-end">
-                        <div class="d-flex align-items-center">
-                            <div class="flex-shrink-0 btn-lg-square border rounded-circle">
-                                <i class="far fa-envelope text-primary"></i>
-                            </div>
-                            <div class="ps-3">
-                                <p class="mb-2">Email Us</p>
-                                <h6 class="mb-0">care@healthfirstclinic.com</h6>
-                            </div>
-                        </div>
+                    <div class="process-item">
+                        <span class="process-number">03</span>
+                        <h5>Treatment</h5>
+                        <p>Modern operation theatres & care units.</p>
+                    </div>
+
+                    <div class="process-item">
+                        <span class="process-number">04</span>
+                        <h5>Recovery</h5>
+                        <p>Comfortable inpatient care rooms.</p>
                     </div>
 
                 </div>
+
+            </div>
+        </div>
+
+
+
+
+
+        <!-- cta section -->
+
+        <div class="emergency-section mt-5">
+
+            <div class="container text-center">
+
+                <h2>24/7 Emergency Care Available</h2>
+                <p>Our emergency team is always ready to provide immediate medical assistance.</p>
+
+                <div class="emergency-actions">
+                    <a href="contact.html" class="btn btn-outline-light me-3">
+                        Call Now
+                    </a>
+
+                    <a href="appointment.html" class="btn btn-outline-light">
+                        Book Appointment
+                    </a>
+                </div>
+
             </div>
 
         </div>
+
     </div>
-    <!-- Brand & Contact End -->
-
-
-    <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-primary navbar-dark sticky-top py-lg-0 px-lg-5 wow fadeIn"
-        data-wow-delay="0.1s">
-        <a href="#" class="navbar-brand ms-3 d-lg-none">MENU</a>
-        <button type="button" class="navbar-toggler me-3" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav me-auto p-3 p-lg-0">
-                <a href="index.html" class="nav-item nav-link">Home</a>
-                <a href="about.html" class="nav-item nav-link">About Us</a>
-                <a href="services.html" class="nav-item nav-link">Services</a>
-                <a href="facilities.html" class="nav-item nav-link active">Facilities</a>
-                <a href="contact.html" class="nav-item nav-link">Contact</a>
-                <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">More</a>
-
-                    <div class="dropdown-menu border-0 rounded-0 rounded-bottom m-0">
-                        <a href="appointment.html" class="dropdown-item">Book Appointment</a>
-                        <a href="testimonial.html" class="dropdown-item">Patient Reviews</a>
-                        <a href="faq.html" class="dropdown-item">FAQs</a>
-                        <a href="404.html" class="dropdown-item">404 Page</a>
-                    </div>
-                </div>
-            </div>
-
-            <a href="#contact" class="btn btn-sm btn-light rounded-pill py-2 px-4 d-none d-lg-block">Book
-                Appointment</a>
-        </div>
-    </nav>
-    <!-- Navbar End -->
-
-
-    <!-- Page Header Start -->
-    <section class="about-hero wow fadeIn" data-wow-delay="0.1s">
-
-        <div class="about-hero-content text-center">
-
-            <h1 class="about-title">Facilities</h1>
-
-            <p class="about-subtitle">
-                Equipped with modern infrastructure and advanced medical technology to ensure the highest standards of
-                patient care.
-            </p>
-
-            </p>
-
-            <nav class="about-breadcrumb">
-                <ol>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="facilities.html" class="active">Facilities</a></li>
-                </ol>
-            </nav>
-
-        </div>
-
-    </section>
-    <!-- Page Header End -->
-
-
-    <!-- Project Start -->
-    <div class="container-xxl py-5">
-        <div class="container">
-            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                <h6 class="section-title bg-white text-center text-primary px-3">Our Projects</h6>
-                <h1 class="display-6 mb-4">Learn More About Our Complete Projects</h1>
-            </div>
-            <div class="owl-carousel project-carousel wow fadeInUp" data-wow-delay="0.1s">
-                <div class="project-item border rounded h-100 p-4" data-dot="01">
-                    <div class="position-relative mb-4">
-                        <img class="img-fluid rounded" src="img/project-1.jpg" alt="">
-                        <a href="img/project-1.jpg" data-lightbox="project"><i class="fa fa-eye fa-2x"></i></a>
-                    </div>
-                    <h6>UI / UX Design</h6>
-                    <span>Digital agency website design and development</span>
-                </div>
-                <div class="project-item border rounded h-100 p-4" data-dot="02">
-                    <div class="position-relative mb-4">
-                        <img class="img-fluid rounded" src="img/project-2.jpg" alt="">
-                        <a href="img/project-2.jpg" data-lightbox="project"><i class="fa fa-eye fa-2x"></i></a>
-                    </div>
-                    <h6>UI / UX Design</h6>
-                    <span>Digital agency website design and development</span>
-                </div>
-                <div class="project-item border rounded h-100 p-4" data-dot="03">
-                    <div class="position-relative mb-4">
-                        <img class="img-fluid rounded" src="img/project-3.jpg" alt="">
-                        <a href="img/project-2.jpg" data-lightbox="project"><i class="fa fa-eye fa-2x"></i></a>
-                    </div>
-                    <h6>UI / UX Design</h6>
-                    <span>Digital agency website design and development</span>
-                </div>
-                <div class="project-item border rounded h-100 p-4" data-dot="04">
-                    <div class="position-relative mb-4">
-                        <img class="img-fluid rounded" src="img/project-4.jpg" alt="">
-                        <a href="img/project-4.jpg" data-lightbox="project"><i class="fa fa-eye fa-2x"></i></a>
-                    </div>
-                    <h6>UI / UX Design</h6>
-                    <span>Digital agency website design and development</span>
-                </div>
-                <div class="project-item border rounded h-100 p-4" data-dot="05">
-                    <div class="position-relative mb-4">
-                        <img class="img-fluid rounded" src="img/project-5.jpg" alt="">
-                        <a href="img/project-5.jpg" data-lightbox="project"><i class="fa fa-eye fa-2x"></i></a>
-                    </div>
-                    <h6>UI / UX Design</h6>
-                    <span>Digital agency website design and development</span>
-                </div>
-                <div class="project-item border rounded h-100 p-4" data-dot="06">
-                    <div class="position-relative mb-4">
-                        <img class="img-fluid rounded" src="img/project-6.jpg" alt="">
-                        <a href="img/project-6.jpg" data-lightbox="project"><i class="fa fa-eye fa-2x"></i></a>
-                    </div>
-                    <h6>UI / UX Design</h6>
-                    <span>Digital agency website design and development</span>
-                </div>
-                <div class="project-item border rounded h-100 p-4" data-dot="07">
-                    <div class="position-relative mb-4">
-                        <img class="img-fluid rounded" src="img/project-7.jpg" alt="">
-                        <a href="img/project-7.jpg" data-lightbox="project"><i class="fa fa-eye fa-2x"></i></a>
-                    </div>
-                    <h6>UI / UX Design</h6>
-                    <span>Digital agency website design and development</span>
-                </div>
-                <div class="project-item border rounded h-100 p-4" data-dot="08">
-                    <div class="position-relative mb-4">
-                        <img class="img-fluid rounded" src="img/project-8.jpg" alt="">
-                        <a href="img/project-8.jpg" data-lightbox="project"><i class="fa fa-eye fa-2x"></i></a>
-                    </div>
-                    <h6>UI / UX Design</h6>
-                    <span>Digital agency website design and development</span>
-                </div>
-                <div class="project-item border rounded h-100 p-4" data-dot="09">
-                    <div class="position-relative mb-4">
-                        <img class="img-fluid rounded" src="img/project-9.jpg" alt="">
-                        <a href="img/project-9.jpg" data-lightbox="project"><i class="fa fa-eye fa-2x"></i></a>
-                    </div>
-                    <h6>UI / UX Design</h6>
-                    <span>Digital agency website design and development</span>
-                </div>
-                <div class="project-item border rounded h-100 p-4" data-dot="10">
-                    <div class="position-relative mb-4">
-                        <img class="img-fluid rounded" src="img/project-10.jpg" alt="">
-                        <a href="img/project-10.jpg" data-lightbox="project"><i class="fa fa-eye fa-2x"></i></a>
-                    </div>
-                    <h6>UI / UX Design</h6>
-                    <span>Digital agency website design and development</span>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Project End -->
-
-
-    <!-- Testimonial Start -->
-    <div class="container-xxl py-5">
-        <div class="container">
-            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                <h6 class="section-title bg-white text-center text-primary px-3">Testimonial</h6>
-                <h1 class="display-6 mb-4">What Our Clients Say!</h1>
-            </div>
-            <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
-                <div class="testimonial-item bg-light rounded p-4">
-                    <div class="d-flex align-items-center mb-4">
-                        <img class="flex-shrink-0 rounded-circle border p-1" src="img/testimonial-1.jpg" alt="">
-                        <div class="ms-4">
-                            <h5 class="mb-1">Client Name</h5>
-                            <span>Profession</span>
-                        </div>
-                    </div>
-                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos.
-                        Clita erat ipsum et lorem et sit.</p>
-                </div>
-                <div class="testimonial-item bg-light rounded p-4">
-                    <div class="d-flex align-items-center mb-4">
-                        <img class="flex-shrink-0 rounded-circle border p-1" src="img/testimonial-2.jpg" alt="">
-                        <div class="ms-4">
-                            <h5 class="mb-1">Client Name</h5>
-                            <span>Profession</span>
-                        </div>
-                    </div>
-                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos.
-                        Clita erat ipsum et lorem et sit.</p>
-                </div>
-                <div class="testimonial-item bg-light rounded p-4">
-                    <div class="d-flex align-items-center mb-4">
-                        <img class="flex-shrink-0 rounded-circle border p-1" src="img/testimonial-3.jpg" alt="">
-                        <div class="ms-4">
-                            <h5 class="mb-1">Client Name</h5>
-                            <span>Profession</span>
-                        </div>
-                    </div>
-                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos.
-                        Clita erat ipsum et lorem et sit.</p>
-                </div>
-                <div class="testimonial-item bg-light rounded p-4">
-                    <div class="d-flex align-items-center mb-4">
-                        <img class="flex-shrink-0 rounded-circle border p-1" src="img/testimonial-4.jpg" alt="">
-                        <div class="ms-4">
-                            <h5 class="mb-1">Client Name</h5>
-                            <span>Profession</span>
-                        </div>
-                    </div>
-                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos.
-                        Clita erat ipsum et lorem et sit.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Testimonial End -->
-
 
     <!-- Footer Start -->
-    <div class="container-fluid bg-dark text-body footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container-fluid bg-dark text-body footer pt-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container py-5">
             <div class="row g-5">
                 <div class="col-lg-3 col-md-6">
@@ -414,15 +638,10 @@
         <div class="container-fluid copyright">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a href="#">Your Site Name</a>, All Right Reserved.
+                    <div class="col-12 text-center">
+                        &copy; <a href="#">HealthFirst Clinic</a>, All Right Reserved.
                     </div>
-                    <div class="col-md-6 text-center text-md-end">
-                        <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                        Designed by <a href="https://htmlcodex.com">HealthFirst Clinic</a>
-                        <br>Distributed By: <a class="border-bottom" href="https://themewagon.com"
-                            target="_blank">ThemeWagon</a>
-                    </div>
+
                 </div>
             </div>
         </div>
@@ -431,8 +650,9 @@
 
 
     <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i
-            class="bi bi-arrow-up"></i></a>
+    <a href="#" class="back-to-top">
+        <i class="bi bi-arrow-up"></i>
+    </a>
 
 
     <!-- JavaScript Libraries -->

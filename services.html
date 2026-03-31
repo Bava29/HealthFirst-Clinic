@@ -33,277 +33,569 @@
 </head>
 
 <body>
-    <!-- Spinner Start -->
-    <div id="spinner"
-        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-        <div class="spinner-border position-relative text-primary" style="width: 6rem; height: 6rem;" role="status">
+    <div class="main-wrapper">
+        <!-- Spinner Start -->
+        <div id="spinner"
+            class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border position-relative text-primary" style="width: 6rem; height: 6rem;" role="status">
+            </div>
+            <img src="img/logo.png" class="spinner-logo position-absolute top-50 start-50 translate-middle"
+                alt="Clinic Logo">
         </div>
-        <img src="img/logo.png" class="spinner-logo position-absolute top-50 start-50 translate-middle"
-            alt="Clinic Logo">
+        <!-- Spinner End -->
+
+
+        <!-- Topbar Start -->
+        <div class="container-fluid bg-light px-0 wow fadeIn" data-wow-delay="0.1s">
+            <div class="row gx-0 align-items-center d-none d-lg-flex">
+                <div class="col-lg-6 px-5 text-start">
+                    <ol class="breadcrumb mb-0">
+                        <li class="breadcrumb-item"><a class="small text-secondary" href="#home">Home</a></li>
+                        <li class="breadcrumb-item"><a class="small text-secondary" href="#services">Services</a></li>
+                        <li class="breadcrumb-item"><a class="small text-secondary" href="#team">Doctors</a></li>
+                        <li class="breadcrumb-item"><a class="small text-secondary" href="#contact">Contact</a></li>
+                    </ol>
+                </div>
+                <div class="col-lg-6 px-5 text-end">
+                    <small>Open daily for appointments and walk-ins:</small>
+                    <div class="h-100 d-inline-flex align-items-center">
+                        <span class="btn-square text-primary border-end rounded-0"><i class="far fa-clock"></i></span>
+                        <span class="small ps-3 text-secondary">8:00 AM - 8:00 PM</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Topbar End -->
+
+
+        <!-- Brand & Contact Start -->
+        <div class="container-fluid py-4 px-5 wow fadeIn" data-wow-delay="0.1s">
+            <div class="row align-items-center top-bar">
+                <div class="col-lg-4 col-md-12 text-center text-lg-start">
+                    <a href="index.html" class="navbar-brand m-0 p-0">
+                        <h1 class="fw-bold m-0 d-flex align-items-center">
+
+                            <img src="img/logo.png" alt="Logo" class="logo-img">
+
+                            <span class="logo-text">
+                                HealthFirst
+                                <small>Clinic</small>
+                            </span>
+
+                        </h1>
+                    </a>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="col-lg-8 d-none d-lg-block">
+                    <div class="row">
+
+                        <!-- Opening Hours -->
+                        <div class="col-lg-4 d-flex align-items-center ">
+                            <div class="d-flex align-items-center">
+                                <div class="flex-shrink-0 btn-lg-square border rounded-circle">
+                                    <i class="far fa-clock text-primary"></i>
+                                </div>
+                                <div class="ps-3">
+                                    <p class="mb-2">Opening Hours</p>
+                                    <h6 class="mb-0">8:00 AM - 8:00 PM</h6>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Call Us -->
+                        <div class="col-lg-4 d-flex align-items-center ">
+                            <div class="d-flex align-items-center">
+                                <div class="flex-shrink-0 btn-lg-square border rounded-circle">
+                                    <i class="fa fa-phone text-primary"></i>
+                                </div>
+                                <div class="ps-3">
+                                    <p class="mb-2">Call Us</p>
+                                    <h6 class="mb-0">+91 98765 43210</h6>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Email -->
+                        <div class="col-lg-4 d-flex align-items-center justify-content-end">
+                            <div class="d-flex align-items-center">
+                                <div class="flex-shrink-0 btn-lg-square border rounded-circle">
+                                    <i class="far fa-envelope text-primary"></i>
+                                </div>
+                                <div class="ps-3">
+                                    <p class="mb-2">Email Us</p>
+                                    <h6 class="mb-0">care@healthfirstclinic.com</h6>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- Brand & Contact End -->
+
+
+        <!-- Navbar Start -->
+        <nav class="navbar navbar-expand-lg bg-primary navbar-dark sticky-top py-lg-0 px-lg-5 wow fadeIn"
+            data-wow-delay="0.1s">
+            <a href="#" class="navbar-brand ms-3 d-lg-none">MENU</a>
+            <button type="button" class="navbar-toggler me-3" data-bs-toggle="collapse"
+                data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav me-auto p-3 p-lg-0">
+                    <a href="index.html" class="nav-item nav-link">Home</a>
+                    <a href="about.html" class="nav-item nav-link">About Us</a>
+                    <a href="services.html" class="nav-item nav-link active">Services</a>
+                    <a href="facilities.html" class="nav-item nav-link">Facilities</a>
+                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">More</a>
+
+                        <div class="dropdown-menu border-0 rounded-0 rounded-bottom m-0">
+                            <a href="appointment.html" class="dropdown-item">Book Appointment</a>
+                            <a href="testimonial.html" class="dropdown-item">Patient Reviews</a>
+                            <a href="faq.html" class="dropdown-item">FAQs</a>
+                            <a href="404.html" class="dropdown-item">404 Page</a>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="#contact" class="btn btn-sm btn-light rounded-pill py-2 px-4 d-none d-lg-block">Book
+                    Appointment</a>
+            </div>
+        </nav>
+        <!-- Navbar End -->
+
+
+        <!-- Page Header Start -->
+        <section class="about-hero wow fadeIn" data-wow-delay="0.1s">
+
+            <div class="about-hero-content text-center">
+
+                <h1 class="about-title">Services</h1>
+
+                <p class="about-subtitle">
+                    Comprehensive healthcare services designed to meet your needs with care, precision, and advanced
+                    technology.
+                </p>
+
+                <nav class="about-breadcrumb">
+                    <ol>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html" class="active">Services</a></li>
+                    </ol>
+                </nav>
+
+            </div>
+
+        </section>
+        <!-- Page Header End -->
+
+
+        <!-- Services card Start -->
+        <div class="container-xxl py-5 mt-5">
+            <div class="container">
+                <div class="text-center mx-auto mb-5" style="max-width: 600px;">
+                    <span class="heading-line">Our Services</span>
+                    <h2 class="heading-main">We Focus On Making The Best In All Ways</h2>
+                </div>
+
+                <div class="row g-4">
+
+                    <!-- Card -->
+                    <div class="col-lg-4 col-md-6">
+                        <a class="service-item d-block text-center h-100 p-4" href="general.html">
+
+                            <div class="img-box">
+                                <img src="img/service-1.jpg" alt="">
+
+                                <div class="overlay">
+                                    <span>Read More</span>
+                                </div>
+                            </div>
+
+                            <h4 class="mt-3">General Consultation</h4>
+
+                        </a>
+                    </div>
+
+                    <!-- Repeat same for others -->
+                    <div class="col-lg-4 col-md-6">
+                        <a class="service-item d-block text-center h-100 p-4" href="pediatrics.html">
+
+                            <div class="img-box">
+                                <img src="img/service-2.jpg" alt="">
+                                <div class="overlay"><span>Read More</span></div>
+                            </div>
+                            <h4 class="mt-3">Pediatrics</h4>
+                        </a>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <a class="service-item d-block text-center h-100 p-4" href="dental.html">
+
+                            <div class="img-box">
+                                <img src="img/service-3.jpg" alt="">
+                                <div class="overlay"><span>Read More</span></div>
+                            </div>
+                            <h4 class="mt-3">Dental Care</h4>
+                        </a>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <a class="service-item d-block text-center h-100 p-4" href="diagnostics.html">
+                            <div class="img-box">
+                                <img src="img/service-4.jpg" alt="">
+                                <div class="overlay"><span>Read More</span></div>
+                            </div>
+                            <h4 class="mt-3">Diagnostics</h4>
+                        </a>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <a class="service-item d-block text-center h-100 p-4" href="skin.html">
+                            <div class="img-box">
+                                <img src="img/service-5.jpg" alt="">
+                                <div class="overlay"><span>Read More</span></div>
+                            </div>
+                            <h4 class="mt-3">Skin & Wellness</h4>
+                        </a>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <a class="service-item d-block text-center h-100 p-4" href="emergency.html">
+                            <div class="img-box">
+                                <img src="img/service-6.jpg" alt="">
+                                <div class="overlay"><span>Read More</span></div>
+                            </div>
+                            <h4 class="mt-3">Emergency Care</h4>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- Service End -->
+
+        <!-- Strip section -->
+
+        <div class="container-xxl py-5 mt-5 why-strip-section">
+            <div class="row text-center">
+
+                <div class="col-md-3 col-6 why-item">
+                    ✔ Experienced Doctors
+                </div>
+
+                <div class="col-md-3 col-6 why-item">
+                    ✔ Advanced Technology
+                </div>
+
+                <div class="col-md-3 col-6 why-item">
+                    ✔ Affordable Care
+                </div>
+
+                <div class="col-md-3 col-6 why-item">
+                    ✔ 24/7 Support
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- Specialists section -->
+
+        <div class="container-xxl py-5 mt-5">
+            <div class="container">
+
+                <div class="text-center mb-5">
+                    <span class="heading-line">Top Specialties</span>
+                    <h2 class="heading-main">Our Most Popular Services</h2>
+                </div>
+
+                <div class="row g-4">
+
+                    <!-- Card 1 -->
+                    <div class="col-lg-4">
+                        <div class="special-card">
+                            <img src="img/service-1.jpg" alt="">
+                            <div class="special-overlay">
+                                <h4>Cardiology</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="col-lg-4">
+                        <div class="special-card">
+                            <img src="img/service-5.jpg" alt="">
+                            <div class="special-overlay">
+                                <h4>Dermatology</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="col-lg-4">
+                        <div class="special-card">
+                            <img src="img/service-3.jpg" alt="">
+                            <div class="special-overlay">
+                                <h4>Dental Care</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <!-- How it works section -->
+
+        <div class="container-xxl py-5">
+            <div class="container text-center">
+
+                <div class="mb-5">
+                    <span class="heading-line">How It Works</span>
+                    <h2 class="heading-main">Simple Steps to Get Care</h2>
+                </div>
+
+                <div class="process-wrapper">
+
+                    <div class="process-step">
+                        <div class="step-circle">1</div>
+                        <h5>Book Appointment</h5>
+                        <p>Choose your preferred doctor and time easily.</p>
+                    </div>
+
+                    <div class="process-step">
+                        <div class="step-circle">2</div>
+                        <h5>Consult Doctor</h5>
+                        <p>Meet our expert doctors for consultation.</p>
+                    </div>
+
+                    <div class="process-step">
+                        <div class="step-circle">3</div>
+                        <h5>Diagnosis</h5>
+                        <p>Accurate diagnosis using modern tools.</p>
+                    </div>
+
+                    <div class="process-step">
+                        <div class="step-circle">4</div>
+                        <h5>Treatment</h5>
+                        <p>Get the best treatment and care plan.</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <!-- tabs section -->
+
+        <!-- Tabs Section -->
+        <div class="container-xxl py-5 tabs-section">
+
+            <!-- Title -->
+            <div class="text-center mb-5">
+                <span class="heading-line">Our Expertise</span>
+                <h2 class="heading-main">Medical Services</h2>
+            </div>
+
+            <!-- Tabs -->
+            <ul class="nav nav-pills justify-content-center mb-4">
+
+                <li class="nav-item">
+                    <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#tab1">
+                        <i class="fas fa-user-md me-2"></i> Outpatient Services
+                    </button>
+                </li>
+
+                <li class="nav-item">
+                    <button class="nav-link" data-bs-toggle="pill" data-bs-target="#tab2">
+                        <i class="fas fa-microscope me-2"></i> Diagnostic Services
+                    </button>
+                </li>
+
+                <li class="nav-item">
+                    <button class="nav-link" data-bs-toggle="pill" data-bs-target="#tab3">
+                        <i class="fas fa-bed me-2"></i>Inpatient Care
+                    </button>
+                </li>
+
+                <li class="nav-item">
+                    <button class="nav-link" data-bs-toggle="pill" data-bs-target="#tab4">
+                        <i class="fas fa-leaf me-2"></i> Preventive Healthcare
+                    </button>
+                </li>
+
+            </ul>
+
+            <!-- Tab Content -->
+            <div class="tab-content">
+
+                <!-- TAB 1 -->
+                <div class="tab-pane fade show active" id="tab1">
+                    <div class="row align-items-center">
+
+                        <div class="col-md-6 order-md-2 text-start">
+                            <h4> <i class="fas fa-user-md me-2"></i> Outpatient Services</h4>
+                            <ul class="service-list">
+                                <li>Quick consultations without hospital admission</li>
+                                <li>Experienced doctors with personalized care</li>
+                                <li>Fast diagnosis and efficient treatment</li>
+                                <li>Minimal waiting time for better experience</li>
+                            </ul>
+                        </div>
+
+                        <div class="col-md-6 order-md-1">
+                            <img src="img/outpatient.jpg" class="tab-img">
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- TAB 2 -->
+                <div class="tab-pane fade" id="tab2">
+                    <div class="row align-items-center">
+
+                        <div class="col-md-6 order-md-2 text-start">
+                            <h4> <i class="fas fa-microscope me-2"></i> Diagnostic Services</h4>
+                            <ul class="service-list">
+                                <li>Advanced lab tests with accurate results</li>
+                                <li>Modern imaging and scanning facilities</li>
+                                <li>Early detection for better treatment planning</li>
+                                <li>Quick report delivery with expert analysis</li>
+                            </ul>
+                        </div>
+
+                        <div class="col-md-6 order-md-1">
+                            <img src="img/diagnostic.jpg" class="tab-img">
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- TAB 3 -->
+                <div class="tab-pane fade" id="tab3">
+                    <div class="row align-items-center">
+
+                        <div class="col-md-6 order-md-2 text-start">
+                            <h4> <i class="fas fa-bed me-2"></i> Inpatient Care</h4>
+                            <ul class="service-list">
+                                <li>24/7 monitoring by skilled medical staff</li>
+                                <li>Comfortable and well-equipped rooms</li>
+                                <li>Personalized treatment for every patient</li>
+                                <li>Safe and supportive healing environment</li>
+                            </ul>
+
+                        </div>
+
+                        <div class="col-md-6 order-md-1">
+                            <img src="img/inpatient.jpg" class="tab-img">
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- TAB 4 -->
+                <div class="tab-pane fade" id="tab4">
+                    <div class="row align-items-center">
+
+                        <div class="col-md-6 order-md-2 text-start">
+                            <h4> <i class="fas fa-leaf me-2"></i> Preventive Healthcare</h4>
+                            <ul class="service-list">
+                                <li>Regular health checkups and screenings</li>
+                                <li>Vaccinations for all age groups</li>
+                                <li>Lifestyle and wellness guidance</li>
+                                <li>Early risk detection and prevention plans</li>
+                            </ul>
+                        </div>
+
+                        <div class="col-md-6 order-md-1">
+                            <img src="img/preventive.jpg" class="tab-img">
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Experts section -->
+        <div class="container-xxl py-5">
+            <div class="container text-center">
+
+                <div class="mb-5">
+                    <span class="heading-line">Our Experts</span>
+                    <h2 class="heading-main">Meet Our Specialist Doctors</h2>
+                </div>
+
+                <div class="row g-4">
+
+                    <!-- Doctor 1 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="doctor-card">
+                            <img src="img/doctor-1.jpg" alt="">
+                            <h5>Dr. Priya Sharma</h5>
+                            <p>Cardiologist</p>
+                        </div>
+                    </div>
+
+                    <!-- Doctor 2 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="doctor-card">
+                            <img src="img/doctor-2.jpg" alt="">
+                            <h5>Dr. Rahul Kumar</h5>
+                            <p>Neurologist</p>
+
+                        </div>
+                    </div>
+
+                    <!-- Doctor 3 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="doctor-card">
+                            <img src="img/doctor-3.jpg" alt="">
+                            <h5>Dr. Anjali Rao</h5>
+                            <p>Dermatologist</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <!-- cta section -->
+
+        <div class="services-cta">
+
+            <div class="container text-center">
+
+                <h2>Need Medical Assistance?</h2>
+                <p>Book your appointment today and get expert care from our specialists.</p>
+
+                <div class="cta-buttons">
+                    <a href="appointment.html" class="btn btn-outline-light">
+                        Book Appointment
+                    </a>
+
+                    <a href="contact.html" class="btn btn-outline-light">
+                        Contact Us
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
     </div>
-    <!-- Spinner End -->
-
-
-    <!-- Topbar Start -->
-    <div class="container-fluid bg-light px-0 wow fadeIn" data-wow-delay="0.1s">
-        <div class="row gx-0 align-items-center d-none d-lg-flex">
-            <div class="col-lg-6 px-5 text-start">
-                <ol class="breadcrumb mb-0">
-                    <li class="breadcrumb-item"><a class="small text-secondary" href="#home">Home</a></li>
-                    <li class="breadcrumb-item"><a class="small text-secondary" href="#services">Services</a></li>
-                    <li class="breadcrumb-item"><a class="small text-secondary" href="#team">Doctors</a></li>
-                    <li class="breadcrumb-item"><a class="small text-secondary" href="#contact">Contact</a></li>
-                </ol>
-            </div>
-            <div class="col-lg-6 px-5 text-end">
-                <small>Open daily for appointments and walk-ins:</small>
-                <div class="h-100 d-inline-flex align-items-center">
-                    <span class="btn-square text-primary border-end rounded-0"><i class="far fa-clock"></i></span>
-                    <span class="small ps-3 text-secondary">8:00 AM - 8:00 PM</span>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Topbar End -->
-
-
-    <!-- Brand & Contact Start -->
-    <div class="container-fluid py-4 px-5 wow fadeIn" data-wow-delay="0.1s">
-        <div class="row align-items-center top-bar">
-            <div class="col-lg-4 col-md-12 text-center text-lg-start">
-                <a href="index.html" class="navbar-brand m-0 p-0">
-                    <h1 class="fw-bold m-0 d-flex align-items-center">
-
-                        <img src="img/logo.png" alt="Logo" class="logo-img">
-
-                        <span class="logo-text">
-                            HealthFirst
-                            <small>Clinic</small>
-                        </span>
-
-                    </h1>
-                </a>
-            </div>
-
-            <!-- Contact Info -->
-            <div class="col-lg-8 d-none d-lg-block">
-                <div class="row">
-
-                    <!-- Opening Hours -->
-                    <div class="col-lg-4 d-flex align-items-center ">
-                        <div class="d-flex align-items-center">
-                            <div class="flex-shrink-0 btn-lg-square border rounded-circle">
-                                <i class="far fa-clock text-primary"></i>
-                            </div>
-                            <div class="ps-3">
-                                <p class="mb-2">Opening Hours</p>
-                                <h6 class="mb-0">8:00 AM - 8:00 PM</h6>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Call Us -->
-                    <div class="col-lg-4 d-flex align-items-center ">
-                        <div class="d-flex align-items-center">
-                            <div class="flex-shrink-0 btn-lg-square border rounded-circle">
-                                <i class="fa fa-phone text-primary"></i>
-                            </div>
-                            <div class="ps-3">
-                                <p class="mb-2">Call Us</p>
-                                <h6 class="mb-0">+91 98765 43210</h6>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Email -->
-                    <div class="col-lg-4 d-flex align-items-center justify-content-end">
-                        <div class="d-flex align-items-center">
-                            <div class="flex-shrink-0 btn-lg-square border rounded-circle">
-                                <i class="far fa-envelope text-primary"></i>
-                            </div>
-                            <div class="ps-3">
-                                <p class="mb-2">Email Us</p>
-                                <h6 class="mb-0">care@healthfirstclinic.com</h6>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-        </div>
-    </div>
-    <!-- Brand & Contact End -->
-
-
-    <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-primary navbar-dark sticky-top py-lg-0 px-lg-5 wow fadeIn"
-        data-wow-delay="0.1s">
-        <a href="#" class="navbar-brand ms-3 d-lg-none">MENU</a>
-        <button type="button" class="navbar-toggler me-3" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav me-auto p-3 p-lg-0">
-                <a href="index.html" class="nav-item nav-link">Home</a>
-                <a href="about.html" class="nav-item nav-link">About Us</a>
-                <a href="services.html" class="nav-item nav-link active">Services</a>
-                <a href="facilities.html" class="nav-item nav-link">Facilities</a>
-                <a href="contact.html" class="nav-item nav-link">Contact</a>
-                <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">More</a>
-
-                    <div class="dropdown-menu border-0 rounded-0 rounded-bottom m-0">
-                        <a href="appointment.html" class="dropdown-item">Book Appointment</a>
-                        <a href="testimonial.html" class="dropdown-item">Patient Reviews</a>
-                        <a href="faq.html" class="dropdown-item">FAQs</a>
-                        <a href="404.html" class="dropdown-item">404 Page</a>
-                    </div>
-                </div>
-            </div>
-
-            <a href="#contact" class="btn btn-sm btn-light rounded-pill py-2 px-4 d-none d-lg-block">Book
-                Appointment</a>
-        </div>
-    </nav>
-    <!-- Navbar End -->
-
-
-    <!-- Page Header Start -->
-    <section class="about-hero wow fadeIn" data-wow-delay="0.1s">
-
-        <div class="about-hero-content text-center">
-
-            <h1 class="about-title">Services</h1>
-
-            <p class="about-subtitle">
-                Comprehensive healthcare services designed to meet your needs with care, precision, and advanced
-                technology.
-            </p>
-
-            <nav class="about-breadcrumb">
-                <ol>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="services.html" class="active">Services</a></li>
-                </ol>
-            </nav>
-
-        </div>
-
-    </section>
-    <!-- Page Header End -->
-
-
-    <!-- Service Start -->
-    <div class="container-xxl py-5">
-        <div class="container">
-            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                <h6 class="section-title bg-white text-center text-primary px-3">Services</h6>
-                <h1 class="display-6 mb-4">We Focuse On Making The Best In All Sectors</h1>
-            </div>
-            <div class="row g-4">
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <a class="service-item d-block rounded text-center h-100 p-4" href="">
-                        <img class="img-fluid rounded mb-4" src="img/service-1.jpg" alt="">
-                        <h4 class="mb-0">Web Design</h4>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <a class="service-item d-block rounded text-center h-100 p-4" href="">
-                        <img class="img-fluid rounded mb-4" src="img/service-2.jpg" alt="">
-                        <h4 class="mb-0">App Development</h4>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <a class="service-item d-block rounded text-center h-100 p-4" href="">
-                        <img class="img-fluid rounded mb-4" src="img/service-3.jpg" alt="">
-                        <h4 class="mb-0">SEO Optimization</h4>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <a class="service-item d-block rounded text-center h-100 p-4" href="">
-                        <img class="img-fluid rounded mb-4" src="img/service-4.jpg" alt="">
-                        <h4 class="mb-0">Social Marketing</h4>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <a class="service-item d-block rounded text-center h-100 p-4" href="">
-                        <img class="img-fluid rounded mb-4" src="img/service-5.jpg" alt="">
-                        <h4 class="mb-0">Email Marketing</h4>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <a class="service-item d-block rounded text-center h-100 p-4" href="">
-                        <img class="img-fluid rounded mb-4" src="img/service-6.jpg" alt="">
-                        <h4 class="mb-0">PPC Advertising</h4>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Service End -->
-
-
-    <!-- Testimonial Start -->
-    <div class="container-xxl py-5">
-        <div class="container">
-            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                <h6 class="section-title bg-white text-center text-primary px-3">Testimonial</h6>
-                <h1 class="display-6 mb-4">What Our Clients Say!</h1>
-            </div>
-            <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
-                <div class="testimonial-item bg-light rounded p-4">
-                    <div class="d-flex align-items-center mb-4">
-                        <img class="flex-shrink-0 rounded-circle border p-1" src="img/testimonial-1.jpg" alt="">
-                        <div class="ms-4">
-                            <h5 class="mb-1">Client Name</h5>
-                            <span>Profession</span>
-                        </div>
-                    </div>
-                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos.
-                        Clita erat ipsum et lorem et sit.</p>
-                </div>
-                <div class="testimonial-item bg-light rounded p-4">
-                    <div class="d-flex align-items-center mb-4">
-                        <img class="flex-shrink-0 rounded-circle border p-1" src="img/testimonial-2.jpg" alt="">
-                        <div class="ms-4">
-                            <h5 class="mb-1">Client Name</h5>
-                            <span>Profession</span>
-                        </div>
-                    </div>
-                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos.
-                        Clita erat ipsum et lorem et sit.</p>
-                </div>
-                <div class="testimonial-item bg-light rounded p-4">
-                    <div class="d-flex align-items-center mb-4">
-                        <img class="flex-shrink-0 rounded-circle border p-1" src="img/testimonial-3.jpg" alt="">
-                        <div class="ms-4">
-                            <h5 class="mb-1">Client Name</h5>
-                            <span>Profession</span>
-                        </div>
-                    </div>
-                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos.
-                        Clita erat ipsum et lorem et sit.</p>
-                </div>
-                <div class="testimonial-item bg-light rounded p-4">
-                    <div class="d-flex align-items-center mb-4">
-                        <img class="flex-shrink-0 rounded-circle border p-1" src="img/testimonial-4.jpg" alt="">
-                        <div class="ms-4">
-                            <h5 class="mb-1">Client Name</h5>
-                            <span>Profession</span>
-                        </div>
-                    </div>
-                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos.
-                        Clita erat ipsum et lorem et sit.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Testimonial End -->
-
-
     <!-- Footer Start -->
-    <div class="container-fluid bg-dark text-body footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container-fluid bg-dark text-body footer pt-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container py-5">
             <div class="row g-5">
                 <div class="col-lg-3 col-md-6">
@@ -368,15 +660,10 @@
         <div class="container-fluid copyright">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a href="#">Your Site Name</a>, All Right Reserved.
+                    <div class="col-12 text-center">
+                        &copy; <a href="#">HealthFirst Clinic</a>, All Right Reserved.
                     </div>
-                    <div class="col-md-6 text-center text-md-end">
-                        <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                        Designed by <a href="https://htmlcodex.com">HealthFirst Clinic</a>
-                        <br>Distributed By: <a class="border-bottom" href="https://themewagon.com"
-                            target="_blank">ThemeWagon</a>
-                    </div>
+
                 </div>
             </div>
         </div>
@@ -385,8 +672,10 @@
 
 
     <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i
-            class="bi bi-arrow-up"></i></a>
+    <a href="#" class="back-to-top">
+        <i class="bi bi-arrow-up"></i>
+    </a>
+
 
 
     <!-- JavaScript Libraries -->

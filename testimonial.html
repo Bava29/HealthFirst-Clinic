@@ -33,227 +33,1134 @@
 </head>
 
 <body>
-    <!-- Spinner Start -->
-    <div id="spinner"
-        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-        <div class="spinner-border position-relative text-primary" style="width: 6rem; height: 6rem;" role="status">
+    <div class="main-wrapper">
+        <!-- Spinner Start -->
+        <div id="spinner"
+            class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border position-relative text-primary" style="width: 6rem; height: 6rem;" role="status">
+            </div>
+            <img src="img/logo.png" class="spinner-logo position-absolute top-50 start-50 translate-middle"
+                alt="Clinic Logo">
         </div>
-        <img src="img/logo.png" class="spinner-logo position-absolute top-50 start-50 translate-middle"
-            alt="Clinic Logo">
+        <!-- Spinner End -->
+
+
+        <!-- Topbar Start -->
+        <div class="container-fluid bg-light px-0 wow fadeIn" data-wow-delay="0.1s">
+            <div class="row gx-0 align-items-center d-none d-lg-flex">
+                <div class="col-lg-6 px-5 text-start">
+                    <ol class="breadcrumb mb-0">
+                        <li class="breadcrumb-item"><a class="small text-secondary" href="#home">Home</a></li>
+                        <li class="breadcrumb-item"><a class="small text-secondary" href="#services">Services</a></li>
+                        <li class="breadcrumb-item"><a class="small text-secondary" href="#team">Doctors</a></li>
+                        <li class="breadcrumb-item"><a class="small text-secondary" href="#contact">Contact</a></li>
+                    </ol>
+                </div>
+                <div class="col-lg-6 px-5 text-end">
+                    <small>Open daily for appointments and walk-ins:</small>
+                    <div class="h-100 d-inline-flex align-items-center">
+                        <span class="btn-square text-primary border-end rounded-0"><i class="far fa-clock"></i></span>
+                        <span class="small ps-3 text-secondary">8:00 AM - 8:00 PM</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Topbar End -->
+
+
+        <!-- Brand & Contact Start -->
+        <div class="container-fluid py-4 px-5 wow fadeIn" data-wow-delay="0.1s">
+            <div class="row align-items-center top-bar">
+                <div class="col-lg-4 col-md-12 text-center text-lg-start">
+                    <a href="index.html" class="navbar-brand m-0 p-0">
+                        <h1 class="fw-bold m-0 d-flex align-items-center">
+
+                            <img src="img/logo.png" alt="Logo" class="logo-img">
+
+                            <span class="logo-text">
+                                HealthFirst
+                                <small>Clinic</small>
+                            </span>
+
+                        </h1>
+                    </a>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="col-lg-8 d-none d-lg-block">
+                    <div class="row">
+
+                        <!-- Opening Hours -->
+                        <div class="col-lg-4 d-flex align-items-center ">
+                            <div class="d-flex align-items-center">
+                                <div class="flex-shrink-0 btn-lg-square border rounded-circle">
+                                    <i class="far fa-clock text-primary"></i>
+                                </div>
+                                <div class="ps-3">
+                                    <p class="mb-2">Opening Hours</p>
+                                    <h6 class="mb-0">8:00 AM - 8:00 PM</h6>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Call Us -->
+                        <div class="col-lg-4 d-flex align-items-center ">
+                            <div class="d-flex align-items-center">
+                                <div class="flex-shrink-0 btn-lg-square border rounded-circle">
+                                    <i class="fa fa-phone text-primary"></i>
+                                </div>
+                                <div class="ps-3">
+                                    <p class="mb-2">Call Us</p>
+                                    <h6 class="mb-0">+91 98765 43210</h6>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Email -->
+                        <div class="col-lg-4 d-flex align-items-center justify-content-end">
+                            <div class="d-flex align-items-center">
+                                <div class="flex-shrink-0 btn-lg-square border rounded-circle">
+                                    <i class="far fa-envelope text-primary"></i>
+                                </div>
+                                <div class="ps-3">
+                                    <p class="mb-2">Email Us</p>
+                                    <h6 class="mb-0">care@healthfirstclinic.com</h6>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- Brand & Contact End -->
+
+
+        <!-- Navbar Start -->
+        <nav class="navbar navbar-expand-lg bg-primary navbar-dark sticky-top py-lg-0 px-lg-5 wow fadeIn"
+            data-wow-delay="0.1s">
+            <a href="#" class="navbar-brand ms-3 d-lg-none">MENU</a>
+            <button type="button" class="navbar-toggler me-3" data-bs-toggle="collapse"
+                data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav me-auto p-3 p-lg-0">
+                    <a href="index.html" class="nav-item nav-link">Home</a>
+                    <a href="about.html" class="nav-item nav-link">About Us</a>
+                    <a href="services.html" class="nav-item nav-link">Services</a>
+                    <a href="facilities.html" class="nav-item nav-link">Facilities</a>
+                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    <div class="nav-item dropdown">
+                        <a href="testimonial.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Patient
+                            Reviews</a>
+
+                        <div class="dropdown-menu border-0 rounded-0 rounded-bottom m-0">
+                            <a href="appointment.html" class="dropdown-item">Book Appointment</a>
+                            <a href="testimonial.html" class="dropdown-item active">Patient Reviews</a>
+                            <a href="faq.html" class="dropdown-item">FAQs</a>
+                            <a href="404.html" class="dropdown-item">404 Page</a>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="#contact" class="btn btn-sm btn-light rounded-pill py-2 px-4 d-none d-lg-block">Book
+                    Appointment</a>
+            </div>
+        </nav>
+        <!-- Navbar End -->
+
+
+        <!-- Page Header Start -->
+        <section class="about-hero wow fadeIn" data-wow-delay="0.1s">
+
+            <div class="about-hero-content text-center">
+
+                <h1 class="about-title">Patient Reviews</h1>
+
+                <p class="about-subtitle">
+                    Hear from our patients about their experiences, trust, and satisfaction with our healthcare
+                    services.
+                </p>
+
+                </p>
+
+                <nav class="about-breadcrumb">
+                    <ol>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="testimonal.html" class="active">Reviews</a></li>
+                    </ol>
+                </nav>
+
+            </div>
+
+        </section>
+        <!-- Page Header End -->
+
+        <!-- Advanced Rating Summary Start -->
+        <div class="container-xxl py-5 rating-advanced">
+            <div class="container mt-5">
+                <div class="text-center mx-auto mb-5" style="max-width: 600px;">
+                    <span class="heading-line">Patient Ratings</span>
+                    <h2 class="heading-main mb-4">Trusted by Thousands of Patients</h2>
+                </div>
+
+                <div class="row align-items-center g-5">
+
+                    <!-- LEFT: BIG RATING -->
+                    <div class="col-lg-4 text-center">
+
+                        <h1 class="rating-big">4.9</h1>
+
+                        <div class="rating-stars mb-2">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-alt"></i>
+                        </div>
+
+                        <p class="text-muted">1,200+ Reviews</p>
+
+                    </div>
+
+                    <!-- RIGHT: RATING BARS -->
+                    <div class="col-lg-8">
+
+                        <div class="rating-bar">
+                            <span>5 <i class="fa fa-star"></i></span>
+                            <div class="bar">
+                                <div class="fill" style="width: 85%;"></div>
+                            </div>
+                            <span>85%</span>
+                        </div>
+
+                        <div class="rating-bar">
+                            <span>4 <i class="fa fa-star"></i></span>
+                            <div class="bar">
+                                <div class="fill" style="width: 10%;"></div>
+                            </div>
+                            <span>10%</span>
+                        </div>
+
+                        <div class="rating-bar">
+                            <span>3 <i class="fa fa-star"></i></span>
+                            <div class="bar">
+                                <div class="fill" style="width: 3%;"></div>
+                            </div>
+                            <span>3%</span>
+                        </div>
+
+                        <div class="rating-bar">
+                            <span>2 <i class="fa fa-star"></i></span>
+                            <div class="bar">
+                                <div class="fill" style="width: 1%;"></div>
+                            </div>
+                            <span>1%</span>
+                        </div>
+
+                        <div class="rating-bar">
+                            <span>1 <i class="fa fa-star"></i></span>
+                            <div class="bar">
+                                <div class="fill" style="width: 1%;"></div>
+                            </div>
+                            <span>1%</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <!-- Advanced Rating Summary End -->
+
+        <!-- Review Filter Start -->
+
+        <div class="container-xxl py-5 text-center">
+            <div class="container mt-5">
+
+                <div class="text-center mb-5">
+                    <span class="heading-line">Filter Reviews</span>
+                    <h2 class="heading-main">Find Reviews Easily</h2>
+                </div>
+                <!-- FILTER BUTTONS -->
+                <div class="review-filter-buttons mb-5 text-center">
+                    <button class="filter-btn active" data-target="all">All</button>
+                    <button class="filter-btn" data-target="five">5 <i class="fa fa-star"></i></button>
+                    <button class="filter-btn" data-target="four">4 <i class="fa fa-star"></i></button>
+                    <button class="filter-btn" data-target="three">3 <i class="fa fa-star"></i></button>
+                    <button class="filter-btn" data-target="two">2 <i class="fa fa-star"></i></button>
+                    <button class="filter-btn" data-target="one">1 <i class="fa fa-star"></i></button>
+                </div>
+
+                <div class=" review-group" id="all">
+                    <div class="row g-4">
+
+                        <!-- 1 -->
+                        <div class="col-lg-4">
+                            <div class="review-card">
+                                <p>“The treatment I received was excellent. The doctor explained everything clearly and
+                                    made
+                                    me feel comfortable throughout.”</p>
+                                <h5>Ramesh Kumar</h5>
+                                <div class="stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 2 -->
+                        <div class="col-lg-4">
+                            <div class="review-card">
+                                <p>“I am extremely satisfied with the care provided here.I would highly recommend this
+                                    clinic.”
+                                </p>
+                                <h5>Anita Verma</h5>
+                                <div class="stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 3 -->
+                        <div class="col-lg-4">
+                            <div class="review-card">
+                                <p>“The service was very good, and the doctors were knowledgeable.Overall, the
+                                    experience
+                                    was positive and worth it.”</p>
+                                <h5>Priya Sharma</h5>
+                                <div class="stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-o"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 4 -->
+                        <div class="col-lg-4">
+                            <div class="review-card">
+                                <p>“The treatment was effective, and the staff were polite and helpful. Everything was
+                                    well-managed, and had good experience overall.”</p>
+                                <h5>Arun Patel</h5>
+                                <div class="stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-o"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 5 -->
+                        <div class="col-lg-4">
+                            <div class="review-card">
+                                <p>“The consultation was okay, and the doctor provided useful advice. However, the
+                                    waiting
+                                    time was longer than expected.”</p>
+                                <h5>Suresh Kumar</h5>
+                                <div class="stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-o"></i>
+                                    <i class="fa fa-star-o"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 6 -->
+                        <div class="col-lg-4">
+                            <div class="review-card">
+                                <p>“The service was not very satisfying. There was a delay in the appointment, and the
+                                    consultation felt a bit rushed.”</p>
+                                <h5>Meena Devi</h5>
+                                <div class="stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-o"></i>
+                                    <i class="fa fa-star-o"></i>
+                                    <i class="fa fa-star-o"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="review-group" id="five" style="display: none;">
+                    <div class="row g-4">
+
+                        <!-- 1 -->
+                        <div class="col-lg-4">
+                            <div class="review-card">
+                                <p>"Outstanding service! The doctors were very attentive and caring."</p>
+                                <h5>Ramesh Kumar</h5>
+                                <div class="stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 2 -->
+                        <div class="col-lg-4">
+                            <div class="review-card">
+                                <p>"Highly recommended clinic. Everything was smooth and professional."</p>
+                                <h5>Anita Verma</h5>
+                                <div class="stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 3 -->
+                        <div class="col-lg-4">
+                            <div class="review-card">
+                                <p>"The best healthcare experience I’ve had. Very satisfied."</p>
+                                <h5>Priya Sharma</h5>
+                                <div class="stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 4 -->
+                        <div class="col-lg-4">
+                            <div class="review-card">
+                                <p>"Doctors explained everything clearly and treated me with care."</p>
+                                <h5>Arun Patel</h5>
+                                <div class="stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 5 -->
+                        <div class="col-lg-4">
+                            <div class="review-card">
+                                <p>"Clean environment and very friendly staff. Excellent service."</p>
+                                <h5>Suresh Kumar</h5>
+                                <div class="stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 6 -->
+                        <div class="col-lg-4">
+                            <div class="review-card">
+                                <p>"Quick appointment and great care from experienced doctors."</p>
+                                <h5>Meena Devi</h5>
+                                <div class="stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="review-group" id="four" style="display: none;">
+                    <div class="row g-4">
+
+                        <!-- 1 -->
+                        <div class="col-lg-4">
+                            <div class="review-card">
+                                <p>"Very good service, doctors were helpful and polite."</p>
+                                <h5>Karthik Raj</h5>
+                                <div class="stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-o"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 2 -->
+                        <div class="col-lg-4">
+                            <div class="review-card">
+                                <p>"Nice experience overall, but waiting time was a bit long."</p>
+                                <h5>Divya Nair</h5>
+                                <div class="stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-o"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 3 -->
+                        <div class="col-lg-4">
+                            <div class="review-card">
+                                <p>"Doctors explained clearly and gave proper treatment."</p>
+                                <h5>Rahul Singh</h5>
+                                <div class="stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-o"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 4 -->
+                        <div class="col-lg-4">
+                            <div class="review-card">
+                                <p>"Clean clinic and friendly staff, good experience."</p>
+                                <h5>Sneha Iyer</h5>
+                                <div class="stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-o"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 5 -->
+                        <div class="col-lg-4">
+                            <div class="review-card">
+                                <p>"Treatment was effective and doctors were supportive."</p>
+                                <h5>Vikram Patel</h5>
+                                <div class="stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-o"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 6 -->
+                        <div class="col-lg-4">
+                            <div class="review-card">
+                                <p>"Good service but could improve appointment timing."</p>
+                                <h5>Neha Sharma</h5>
+                                <div class="stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-o"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="review-group" id="three" style="display: none;">
+                    <div class="row g-4">
+
+                        <div class="col-lg-4">
+                            <div class="review-card">
+                                <p>“The treatment was decent, and the staff were polite.”
+                                </p>
+                                <h5>Ajay Kumar</h5>
+                                <div class="stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-o"></i>
+                                    <i class="fa fa-star-o"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4">
+                            <div class="review-card">
+                                <p>"Doctors were good but waiting time was long."</p>
+                                <h5>Pooja Mehta</h5>
+                                <div class="stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-o"></i>
+                                    <i class="fa fa-star-o"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4">
+                            <div class="review-card">
+                                <p>"Treatment was fine but staff response was slow."</p>
+                                <h5>Ravi Kumar</h5>
+                                <div class="stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-o"></i>
+                                    <i class="fa fa-star-o"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="review-group" id="two" style="display: none;">
+                    <div class="row g-4">
+
+                        <div class="col-lg-4">
+                            <div class="review-card">
+                                <p>"Slow service and waiting time was long."</p>
+                                <h5>Rohit Sharma</h5>
+                                <div class="stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-o"></i>
+                                    <i class="fa fa-star-o"></i>
+                                    <i class="fa fa-star-o"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4">
+                            <div class="review-card">
+                                <p>"Staff response could be improved."</p>
+                                <h5>Kavya Reddy</h5>
+                                <div class="stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-o"></i>
+                                    <i class="fa fa-star-o"></i>
+                                    <i class="fa fa-star-o"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4">
+                            <div class="review-card">
+                                <p>"Average treatment, not fully satisfied."</p>
+                                <h5>Sunil Kumar</h5>
+                                <div class="stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-o"></i>
+                                    <i class="fa fa-star-o"></i>
+                                    <i class="fa fa-star-o"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="review-group" id="one" style="display: none;">
+                    <div class="row g-4">
+
+                        <div class="col-lg-4">
+                            <div class="review-card">
+                                <p>"Very poor service and long delays."</p>
+                                <h5>Rakesh Kumar</h5>
+                                <div class="stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-o"></i>
+                                    <i class="fa fa-star-o"></i>
+                                    <i class="fa fa-star-o"></i>
+                                    <i class="fa fa-star-o"></i>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4">
+                            <div class="review-card">
+                                <p>"Not satisfied with treatment."</p>
+                                <h5>Saranya</h5>
+                                <div class="stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-o"></i>
+                                    <i class="fa fa-star-o"></i>
+                                    <i class="fa fa-star-o"></i>
+                                    <i class="fa fa-star-o"></i>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4">
+                            <div class="review-card">
+                                <p>"Staff behavior was not good."</p>
+                                <h5>Vijay Kumar</h5>
+                                <div class="stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-o"></i>
+                                    <i class="fa fa-star-o"></i>
+                                    <i class="fa fa-star-o"></i>
+                                    <i class="fa fa-star-o"></i>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <!-- Review Filter End -->
+
+        <div class="container-xxl py-5 video-testimonals">
+
+            <!-- Heading -->
+            <div class="text-center mx-auto mb-5" style="max-width: 600px;">
+                <span class="heading-line">Video Testimonials</span>
+                <h2 class="heading-main mb-4">Hear From Our Happy Patients</h2>
+            </div>
+
+            <div class="row g-4">
+
+                <!-- Video 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="video-card" data-video="https://www.youtube.com/embed/aqz-KE-bpKQ">
+
+                        <div class="video-thumb">
+                            <img src="https://img.youtube.com/vi/aqz-KE-bpKQ/hqdefault.jpg">
+                            <div class="video-overlay"></div>
+
+                            <!-- Play Button -->
+                            <div class="play-btn">
+                                <i class="fa fa-play"></i>
+                            </div>
+
+                        </div>
+
+                        <h5>Ramesh Kumar</h5>
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+
+                        <p>Heart Treatment</p>
+
+                    </div>
+                </div>
+
+                <!-- Video 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="video-card" data-video="https://www.youtube.com/embed/jNQXAC9IVRw">
+
+                        <div class="video-thumb">
+                            <img src="https://img.youtube.com/vi/jNQXAC9IVRw/hqdefault.jpg">
+                            <div class="video-overlay"></div>
+
+                            <!-- Play Button -->
+                            <div class="play-btn">
+                                <i class="fa fa-play"></i>
+                            </div>
+
+                        </div>
+                        <h5>Priya Sharma</h5>
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+
+                        <p>Skin Treatment</p>
+                    </div>
+                </div>
+
+                <!-- Video 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="video-card" data-video="https://www.youtube.com/embed/3JZ_D3ELwOQ">
+
+                        <div class="video-thumb">
+                            <img src="https://img.youtube.com/vi/3JZ_D3ELwOQ/hqdefault.jpg">
+                            <div class="video-overlay"></div>
+
+                            <div class="play-btn">
+                                <i class="fa fa-play"></i>
+                            </div>
+
+                        </div>
+                        <h5>Arun Patel</h5>
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+
+                        <p>General Checkup</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="container-xxl py-5 featured-stories">
+            <div class="container">
+
+                <!-- Heading -->
+                <div class="text-center mb-5">
+                    <span class="heading-line">Patient Stories</span>
+                    <h2 class="heading-main">Real Experiences, Real Care</h2>
+                </div>
+
+                <div class="row g-4">
+
+                    <!-- Story 1 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="story-card">
+
+                            <div class="story-top">
+                                <img src="https://randomuser.me/api/portraits/men/12.jpg">
+                                <div>
+                                    <h6>Arun Kumar</h6>
+                                    <small>Heart Surgery</small>
+                                </div>
+                            </div>
+
+                            <p>
+                                “I was very nervous before my surgery, but the doctors
+                                gave me confidence. The care I received was exceptional.”
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Story 2 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="story-card">
+
+                            <div class="story-top">
+                                <img src="https://randomuser.me/api/portraits/women/25.jpg">
+                                <div>
+                                    <h6>Priya Sharma</h6>
+                                    <small>Skin Treatment</small>
+                                </div>
+                            </div>
+
+                            <p>
+                                “My skin improved so much after treatment.
+                                The doctor explained everything clearly.”
+                            </p>
+
+
+                        </div>
+                    </div>
+
+                    <!-- Story 3 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="story-card">
+
+                            <div class="story-top">
+                                <img src="https://randomuser.me/api/portraits/men/45.jpg">
+                                <div>
+                                    <h6>Rahul Verma</h6>
+                                    <small>General Checkup</small>
+                                </div>
+                            </div>
+
+                            <p>
+                                “Quick service and friendly staff.
+                                Booking was easy and the consultation was smooth.”
+                            </p>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <!-- Review form submission-->
+        <div class="container-xxl py-5 review-form-section ">
+
+            <div class="text-center mb-5">
+                <span class="heading-line">Share Your Experience</span>
+                <h2 class="heading-main">Write a Review</h2>
+            </div>
+
+            <div class="review-form-box">
+
+                <form>
+
+                    <input type="text" placeholder="Your Name" required>
+
+                    <input type="email" placeholder="Your Email" required>
+
+                    <div class="rating-input">
+                        <label>Rating:</label>
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                    </div>
+
+                    <textarea rows="4" placeholder="Write your review..." required></textarea>
+
+                    <button type="submit">Submit Review</button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+
+        <div class="container-xxl py-5 helpful-reviews">
+            <div class="container">
+
+                <!-- Heading -->
+                <div class="text-center mb-5">
+                    <span class="heading-line">Top Reviews</span>
+                    <h2 class="heading-main">Most Helpful Reviews</h2>
+                </div>
+
+                <div class="row g-4">
+
+                    <!-- Review 1 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="helpful-card most-liked">
+
+                            <h6>Ramesh Kumar</h6>
+
+                            <div class="stars mb-2">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+
+                            <p>
+                                “The doctors were very friendly and explained everything clearly.“The doctors handled my
+                                heart condition with exceptional care and professionalism.
+                                Highly recommended!”
+                            </p>
+
+                            <button class="heart-btn">
+                                <i class="fa fa-heart"></i>
+                                <span>15</span>
+                            </button>
+
+
+                        </div>
+                    </div>
+
+                    <!-- Review 2 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="helpful-card most-liked">
+                            <h6>Ramya devi</h6>
+                            <div class="stars mb-2">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+
+                            <p>
+                                “Clean hospital and quick service.Booking was smooth and easy.I had been struggling with
+                                my skin issues for a long time, but the treatment made a huge difference.
+                                I feel much more confident.”
+                            </p>
+
+                            <button class="heart-btn">
+                                <i class="fa fa-heart"></i>
+                                <span>8</span>
+                            </button>
+
+
+                        </div>
+                    </div>
+
+                    <!-- Review 3 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="helpful-card most-liked">
+
+                            <h6>Rahul Verma</h6>
+
+                            <div class="stars mb-2">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+
+                            <p>
+                                “Very professional doctors and caring staff. Great experience overall.The consultation
+                                process was very smooth.The doctor took time to listen carefully to my concerns.”
+                            </p>
+
+                            <button class="heart-btn">
+                                <i class="fa fa-heart"></i>
+                                <span>15</span>
+                            </button>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Doctor response -->
+        <div class="container-xxl py-5 doctor-response-section">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <span class="heading-line">Doctor Responses</span>
+                    <h2 class="heading-main">We Value Your Feedback</h2>
+                </div>
+
+                <div class="response-card">
+                    <div class="patient-review d-flex gap-3">
+
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" class="avatar">
+
+                        <div>
+                            <h5>Ramesh Kumar</h5>
+
+                            <div class="stars mb-2">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+
+                            <p>
+                                "The treatment was excellent and the staff were very supportive.
+                                I felt very comfortable throughout my visit."
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="reply-thread mt-4">
+
+                        <div class="doctor-reply d-flex gap-3">
+
+                            <img src="https://randomuser.me/api/portraits/women/44.jpg" class="avatar doctor-avatar">
+
+                            <div>
+                                <h6>
+                                    Dr. Priya Sharma
+                                    <span class="verified-round">
+                                        <i class="fa fa-check"></i>
+                                    </span>
+
+                                </h6>
+                                <span class="speciality">Cardiologist • 2 days ago</span>
+
+                                <p>
+                                    Thank you for your kind feedback. We’re happy you had a great experience.
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <!-- Doctor Reply 2 -->
+                        <div class="doctor-reply d-flex gap-3 mt-3">
+
+                            <img src="https://randomuser.me/api/portraits/men/45.jpg" class="avatar doctor-avatar">
+
+                            <div>
+                                <h6>
+                                    Dr. Rahul Verma
+                                    <span class="verified-round">
+                                        <i class="fa fa-check"></i>
+                                    </span>
+                                </h6>
+                                <span class="speciality">General Physician • 1 day ago</span>
+
+                                <p>
+                                    Your health is our priority. Feel free to reach out anytime.
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <!-- Doctor Reply 3 -->
+                        <div class="doctor-reply d-flex gap-3 mt-3">
+
+                            <img src="https://randomuser.me/api/portraits/women/50.jpg" class="avatar doctor-avatar">
+
+                            <div>
+                                <h6>
+                                    Dr. Anjali Mehta
+                                    <span class="verified-round">
+                                        <i class="fa fa-check"></i>
+                                    </span>
+                                </h6>
+                                <span class="speciality">Dermatologist • Just now</span>
+
+                                <p>
+                                    We appreciate your trust. Stay healthy and take care!
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
     </div>
-    <!-- Spinner End -->
-
-
-    <!-- Topbar Start -->
-    <div class="container-fluid bg-light px-0 wow fadeIn" data-wow-delay="0.1s">
-        <div class="row gx-0 align-items-center d-none d-lg-flex">
-            <div class="col-lg-6 px-5 text-start">
-                <ol class="breadcrumb mb-0">
-                    <li class="breadcrumb-item"><a class="small text-secondary" href="#home">Home</a></li>
-                    <li class="breadcrumb-item"><a class="small text-secondary" href="#services">Services</a></li>
-                    <li class="breadcrumb-item"><a class="small text-secondary" href="#team">Doctors</a></li>
-                    <li class="breadcrumb-item"><a class="small text-secondary" href="#contact">Contact</a></li>
-                </ol>
-            </div>
-            <div class="col-lg-6 px-5 text-end">
-                <small>Open daily for appointments and walk-ins:</small>
-                <div class="h-100 d-inline-flex align-items-center">
-                    <span class="btn-square text-primary border-end rounded-0"><i class="far fa-clock"></i></span>
-                    <span class="small ps-3 text-secondary">8:00 AM - 8:00 PM</span>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Topbar End -->
-
-
-    <!-- Brand & Contact Start -->
-    <div class="container-fluid py-4 px-5 wow fadeIn" data-wow-delay="0.1s">
-        <div class="row align-items-center top-bar">
-            <div class="col-lg-4 col-md-12 text-center text-lg-start">
-                <a href="index.html" class="navbar-brand m-0 p-0">
-                    <h1 class="fw-bold m-0 d-flex align-items-center">
-
-                        <img src="img/logo.png" alt="Logo" class="logo-img">
-
-                        <span class="logo-text">
-                            HealthFirst
-                            <small>Clinic</small>
-                        </span>
-
-                    </h1>
-                </a>
-            </div>
-
-            <!-- Contact Info -->
-            <div class="col-lg-8 d-none d-lg-block">
-                <div class="row">
-
-                    <!-- Opening Hours -->
-                    <div class="col-lg-4 d-flex align-items-center ">
-                        <div class="d-flex align-items-center">
-                            <div class="flex-shrink-0 btn-lg-square border rounded-circle">
-                                <i class="far fa-clock text-primary"></i>
-                            </div>
-                            <div class="ps-3">
-                                <p class="mb-2">Opening Hours</p>
-                                <h6 class="mb-0">8:00 AM - 8:00 PM</h6>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Call Us -->
-                    <div class="col-lg-4 d-flex align-items-center ">
-                        <div class="d-flex align-items-center">
-                            <div class="flex-shrink-0 btn-lg-square border rounded-circle">
-                                <i class="fa fa-phone text-primary"></i>
-                            </div>
-                            <div class="ps-3">
-                                <p class="mb-2">Call Us</p>
-                                <h6 class="mb-0">+91 98765 43210</h6>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Email -->
-                    <div class="col-lg-4 d-flex align-items-center justify-content-end">
-                        <div class="d-flex align-items-center">
-                            <div class="flex-shrink-0 btn-lg-square border rounded-circle">
-                                <i class="far fa-envelope text-primary"></i>
-                            </div>
-                            <div class="ps-3">
-                                <p class="mb-2">Email Us</p>
-                                <h6 class="mb-0">care@healthfirstclinic.com</h6>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-        </div>
-    </div>
-    <!-- Brand & Contact End -->
-
-
-    <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-primary navbar-dark sticky-top py-lg-0 px-lg-5 wow fadeIn"
-        data-wow-delay="0.1s">
-        <a href="#" class="navbar-brand ms-3 d-lg-none">MENU</a>
-        <button type="button" class="navbar-toggler me-3" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav me-auto p-3 p-lg-0">
-                <a href="index.html" class="nav-item nav-link">Home</a>
-                <a href="about.html" class="nav-item nav-link">About Us</a>
-                <a href="services.html" class="nav-item nav-link">Services</a>
-                <a href="facilities.html" class="nav-item nav-link">Facilities</a>
-                <a href="contact.html" class="nav-item nav-link">Contact</a>
-                <div class="nav-item dropdown">
-                    <a href="testimonial.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Patient
-                        Reviews</a>
-
-                    <div class="dropdown-menu border-0 rounded-0 rounded-bottom m-0">
-                        <a href="appointment.html" class="dropdown-item">Book Appointment</a>
-                        <a href="testimonial.html" class="dropdown-item active">Patient Reviews</a>
-                        <a href="faq.html" class="dropdown-item">FAQs</a>
-                        <a href="404.html" class="dropdown-item">404 Page</a>
-                    </div>
-                </div>
-            </div>
-
-            <a href="#contact" class="btn btn-sm btn-light rounded-pill py-2 px-4 d-none d-lg-block">Book
-                Appointment</a>
-        </div>
-    </nav>
-    <!-- Navbar End -->
-
-
-    <!-- Page Header Start -->
-    <section class="about-hero wow fadeIn" data-wow-delay="0.1s">
-
-        <div class="about-hero-content text-center">
-
-            <h1 class="about-title">Patient Reviews</h1>
-
-            <p class="about-subtitle">
-                Hear from our patients about their experiences, trust, and satisfaction with our healthcare services.
-            </p>
-
-            </p>
-
-            <nav class="about-breadcrumb">
-                <ol>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="testimonal.html" class="active">Reviews</a></li>
-                </ol>
-            </nav>
-
-        </div>
-
-    </section>
-    <!-- Page Header End -->
-
-
-    <!-- Testimonial Start -->
-    <div class="container-xxl py-5">
-        <div class="container">
-            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                <h6 class="section-title bg-white text-center text-primary px-3">Testimonial</h6>
-                <h1 class="display-6 mb-4">What Our Clients Say!</h1>
-            </div>
-            <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
-                <div class="testimonial-item bg-light rounded p-4">
-                    <div class="d-flex align-items-center mb-4">
-                        <img class="flex-shrink-0 rounded-circle border p-1" src="img/testimonial-1.jpg" alt="">
-                        <div class="ms-4">
-                            <h5 class="mb-1">Client Name</h5>
-                            <span>Profession</span>
-                        </div>
-                    </div>
-                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos.
-                        Clita erat ipsum et lorem et sit.</p>
-                </div>
-                <div class="testimonial-item bg-light rounded p-4">
-                    <div class="d-flex align-items-center mb-4">
-                        <img class="flex-shrink-0 rounded-circle border p-1" src="img/testimonial-2.jpg" alt="">
-                        <div class="ms-4">
-                            <h5 class="mb-1">Client Name</h5>
-                            <span>Profession</span>
-                        </div>
-                    </div>
-                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos.
-                        Clita erat ipsum et lorem et sit.</p>
-                </div>
-                <div class="testimonial-item bg-light rounded p-4">
-                    <div class="d-flex align-items-center mb-4">
-                        <img class="flex-shrink-0 rounded-circle border p-1" src="img/testimonial-3.jpg" alt="">
-                        <div class="ms-4">
-                            <h5 class="mb-1">Client Name</h5>
-                            <span>Profession</span>
-                        </div>
-                    </div>
-                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos.
-                        Clita erat ipsum et lorem et sit.</p>
-                </div>
-                <div class="testimonial-item bg-light rounded p-4">
-                    <div class="d-flex align-items-center mb-4">
-                        <img class="flex-shrink-0 rounded-circle border p-1" src="img/testimonial-4.jpg" alt="">
-                        <div class="ms-4">
-                            <h5 class="mb-1">Client Name</h5>
-                            <span>Profession</span>
-                        </div>
-                    </div>
-                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos.
-                        Clita erat ipsum et lorem et sit.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Testimonial End -->
-
-
     <!-- Footer Start -->
     <div class="container-fluid bg-dark text-body footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container py-5">
@@ -320,25 +1227,38 @@
         <div class="container-fluid copyright">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a href="#">Your Site Name</a>, All Right Reserved.
+                    <div class="col-12 text-center">
+                        &copy; <a href="#">HealthFirst Clinic</a>, All Right Reserved.
                     </div>
-                    <div class="col-md-6 text-center text-md-end">
-                        <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                        Designed by <a href="https://htmlcodex.com">HealthFirst Clinic</a>
-                        <br>Distributed By: <a class="border-bottom" href="https://themewagon.com"
-                            target="_blank">ThemeWagon</a>
-                    </div>
+
                 </div>
             </div>
         </div>
     </div>
     <!-- Footer End -->
 
+    <!-- Video Testimonials -->
+
+    <div class="video-modal" id="videoModal">
+        <div class="video-modal-content">
+            <span class="close-btn">&times;</span>
+            <iframe id="videoFrame" src="" allow="autoplay; encrypted-media" allowfullscreen>
+            </iframe>
+        </div>
+    </div>
+
+
+    <!-- Popup Message for review submission -->
+    <div class="success-popup" id="successPopup">
+        Review submitted successfully!
+    </div>
+
+
 
     <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i
-            class="bi bi-arrow-up"></i></a>
+    <a href="#" class="back-to-top">
+        <i class="bi bi-arrow-up"></i>
+    </a>
 
 
     <!-- JavaScript Libraries -->
@@ -353,6 +1273,7 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+
 </body>
 
 </html>
